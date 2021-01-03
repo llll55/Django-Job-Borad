@@ -3,7 +3,10 @@ from django.urls import include, path
 
 from .import views
 
+app_name = 'contact'
+
 urlpatterns = [
-    path('',views.job_list),
-    path('<int:id>',views.job_detail),
+    path('',views.send_message, name='contact'),
+
 ]
+
